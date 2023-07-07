@@ -8,6 +8,8 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Software } from './software/entities/software.entity';
 
+
+
 @Module({
   imports: [
     ConfigModule.forRoot(),
