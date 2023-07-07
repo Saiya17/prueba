@@ -1,0 +1,39 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Software {
+  id: ID!
+  identificacion: String!
+  nombre: String!
+  idioma: String!
+  requerimientos: String!
+  estado: Boolean!
+}
+
+type Query {
+  software(id: ID!): Software!
+}
+
+type Mutation {
+  createSoftware(createSoftwareInput: CreateSoftwareInput!): Software!
+  updateSoftware(updateSoftwareInput: UpdateSoftwareInput!): Software!
+  removeEstudiante(id: ID!): Software!
+}
+
+input CreateSoftwareInput {
+  identificacion: String!
+  nombre: String!
+  idioma: String!
+  requerimientos: String!
+  estado: Boolean!
+}
+
+input UpdateSoftwareInput {
+  identificacion: String
+  nombre: String
+  idioma: String
+  requerimientos: String
+  estado: Boolean
+  id: ID!
+}
