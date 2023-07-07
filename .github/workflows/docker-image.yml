@@ -35,6 +35,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
+        
     - name: Build Docker Image
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
